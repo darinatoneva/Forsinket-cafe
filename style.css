@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+:root{
+  --black: #000000;
+  --brown: #2A191A;
+  --leightbrown: #AA8773;
+  --red: #98251E;
+  --orange: #E45932;
+  --yellow: #F3A93E;
+  --grey: #F5F5F5;
+}
 * {
     box-sizing: border-box;
 }
@@ -5,49 +17,328 @@
 body {
     width: 100%;
     margin: auto 0px;
-    padding: 0px;
+    /* padding: 0 2em 0 2em; */
     }
-
-.pagecontainer {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 main {
     width: 100%;
-    display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
+.row{
+  width: 100vw;
+}
+.container-fluid {
+  padding: 0;
+}
+h1, h2, h3, h4 {
+  font-family: 'Vidaloka', serif;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+}
+.logo img {
+  width: 8em;
+  padding: 0.5em 0 0 1em;
+}
+/* Navigation */
+.navbar {
+  justify-content: flex-end;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+.navImage{
+  position: absolute;
+  z-index: -1;
+  height: 40px;
+  width: 100%;
+}
+/* Horizontal lines */
+.lines {
+  width: 100%;
+}
+.firstLine{
+  height: 1.5px;
+  width: 50%;
+  background-color: black;  
+}
+.secondLine {
+  height: 3px;
+  width: 50%;
+  background-color: black;
+  margin-top: -0.7em;
+}
+/* Carousel */
 .bd-example {
-        /* background-color: grey; */
-        width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: -2;
 }
+
 .carousel-indicators {
-    top: 321px;
+  top: 321px;
+  padding-left: 2em;
 }
 .carousel-control-next, .carousel-control-prev {
     top: 114px;
 }
 .carousel-caption {
-    position: relative;
-    bottom: -34px;
-    z-index: 100;
-    padding-top: 67px;
-    padding-bottom: 20px;
-    left: 0;
-    padding: 0 2em;
+  position: relative;
+  bottom: -34px;
+  z-index: 100;
+  padding-top: 67px;
+  padding-bottom: 20px;
+  left: 0;
+  padding: 0 2em;
    }
-   .carousel-indicators li {
-    background-color: grey;
-   }
-   .carousel-control-prev-icon {
-    background-image: url("images/left-arrow.svg");
+  .carousel-indicators li {
+  background-color: grey;
+  }
+  .carousel-control-prev-icon {
+  background-image: url("images/left-arrow.svg");
 }
 .carousel-control-next-icon {
-    background-image: url("images/right-arrow.svg");
+  background-image: url("images/right-arrow.svg");
 }
+
+/* Velkommen */
+.velkommen {
+  margin: 18em 0 0 0;
+  padding: 2em;
+}
+.velkommen p, h5{
+  margin-top: 2em;
+}
+.greyTexture {
+  position: absolute;
+  width: 100%;
+  height: 846px;
+  z-index: -10;
+  top: 24em;
+  left: 0;
+  opacity: 40%;
+}
+
+.address {
+  font-family: 'Vidaloka', serif;
+  color: var(--red);
+}
+.map {
+  width: 100%;
+  margin-top: 2em;
+  }
+.velkommenImage {
+  width: 100%;
+  padding: 2em 0 2em 0;
+}
+/* Hvorfor */
+.hvorfor {
+  margin-top: 4em;
+}
+.hvorforArticle{
+  margin: 0;
+}
+.circleImage {
+  width: 9em;
+  height: 9em;
+  border-radius: 100px;
+  }
+.border{
+  width: 10em;
+  height: 10em;
+  border-radius: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0 2em 0;
+  }
+.Vidaloka22px{
+  font-family: 'Vidaloka', serif;
+  width: 80%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 30px;
+  margin-bottom: 1em;
+}
+.hvorforArticle p{
+  width: 80%;
+}
+/* Favoritter */
+.favoritterArticle{
+  margin: 4em 0 0 0;
+}
+.favoritterArticle figure img{
+  width: 100%;
+  padding: 2em;
+}
+.figure-caption {
+  font-family: 'Vidaloka', serif;
+  font-size: 1em;
+  color: black;
+  text-align: center;
+}
+.greyTextureFavoritter {
+  position: absolute;
+  width: 100%;
+  height: 1280px;
+  z-index: -10;
+  top: 168em;
+  left: 0;
+  opacity: 40%;
+}
+.favoritterArticle button{
+  margin: 2em 0 0 0;
+}
+/* Vires kunders siger */
+
+.VoresKundersSigerSection {
+  margin: 0;
+  width: 100%;
+  }
+ .carousel2{
+   margin-top: 17em;
+ }
+.quotes, .stars{
+  width: 30px;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.quotes{
+  width: 30px;
+}
+.stars{
+  width: 120px;
+ }
+ .VoresKundersCarousel-caption {
+  position: relative;
+  bottom: -34px;
+  z-index: 100;
+  padding-top: 67px;
+  padding-bottom: 20px;
+  left: 0;
+  padding: 0 2em 3em -1em;
+}
+.VoresKundersCarousel-item .VoresKundersCarousel-caption h5{
+  font-size: 1em;
+  font-weight: 400;
+  width: 100%;
+  padding: 0 2em 0 2em;
+  text-align: center;
+ }
+.VoresKundersCarousel-item .VoresKundersCarousel-caption h6{
+  font-weight: 300;
+  text-align: center;
+}
+.VoresKundersCarousel-indicators{
+  top: 25em;
+}
+
+/* Footer */
+.footer{
+  margin: 0;
+}
+.footerTexture{
+  width: 104%;
+  height: 26em;
+  z-index: -10;
+  position: absolute;
+  top: 283em;
+  left: 0;
+  }
+.footerLogo {
+  margin-top: 33em;
+  width: 100%;
+  padding: 9em;
+}
+.footer p {
+  width: 100%;
+  margin-top: -6em;
+  color: white;
+  font-family: 'Vidaloka';
+  text-align: center;
+}
+.footer button{
+  margin: 2em 0 0 0;
+}
+
+
+/* .VoresKundersCarousel-control-prev, .VoresKundersCarousel-control-next{
+  position: fixed;
+} */
+/* Galleri 1 */
+  /* div#quad { 
+    background-color: #000; 
+    font-size: 0; width: 60%; 
+    margin: 0 auto;
+    box-shadow: 0 0 12px rgba(0,0,0,0.8);
+  }
+  div#quad figure { 
+    margin: 0; width: 50%; 
+    height: auto; transition: 1s; 
+    display: inline-block; 
+    position: relative; overflow: hidden; 
+  }
+  div#quad figure:hover { cursor: pointer; z-index: 4; }
+  div#quad figure img { width: 100%; height: auto; }
+  div#quad figure:nth-child(1) { transform-origin: top left; }
+  div#quad figure:nth-child(2) { transform-origin: top right; }
+  div#quad figure:nth-child(3) { transform-origin: bottom left; }
+  div#quad figure:nth-child(4) { transform-origin: bottom right; }
+  div#quad figure figcaption { 
+    margin: 0; opacity: 0; 
+    background: rgba(0,0,0,0.3); 
+    color: #fff; padding: .3rem; 
+    font-size: 1.2rem; 
+    position: absolute; 
+    bottom: 0; width: 100%;
+      transition: 1s 1s opacity; 
+  }
+  .expanded { transform: scale(2); z-index: 5;  }
+  div#quad figure.expanded figcaption { opacity: 1; }
+  div.full figure:not(.expanded) { pointer-events: none; } */
+
+
+  /* Galleri 2 */
+  /* .row {
+    display: -ms-flexbox; /* IE10 
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+   */
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
