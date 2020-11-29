@@ -18,16 +18,13 @@ body {
     width: 100%;
     margin: auto 0px;
     /* padding: 0 2em 0 2em; */
-    }
-
-main {
-    width: 100%;
     align-items: center;
     justify-content: center;
+    }
+.row {
+  justify-content: center;
 }
-.row{
-  width: 100vw;
-}
+
 .container-fluid {
   padding: 0;
 }
@@ -70,38 +67,24 @@ p{
   background-color: black;
   margin-top: -0.7em;
 }
-/* Carousel */
-.bd-example {
+
+/*---Firefox Bug Fix --*/
+.sliderTop{
+  position: absolute;
+  top: 2em;
+  z-index: -10;
+}
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+.sliderTopInner img{
   width: 100%;
   height: 300px;
-  position: absolute;
-  z-index: -2;
-}
-
-.carousel-indicators {
-  top: 321px;
-  padding-left: 2em;
-}
-.carousel-control-next, .carousel-control-prev {
-    top: 114px;
-}
-.carousel-caption {
-  position: relative;
-  bottom: -34px;
-  z-index: 100;
-  padding-top: 67px;
-  padding-bottom: 20px;
-  left: 0;
-  padding: 0 2em;
-   }
-  .carousel-indicators li {
-  background-color: grey;
-  }
-  .carousel-control-prev-icon {
-  background-image: url("images/left-arrow.svg");
-}
-.carousel-control-next-icon {
-  background-image: url("images/right-arrow.svg");
+  z-index: -10;
 }
 
 /* Velkommen */
@@ -114,10 +97,9 @@ p{
 }
 .greyTexture {
   position: absolute;
-  width: 100%;
-  height: 846px;
+  height: 948px;
   z-index: -10;
-  top: 24em;
+  top: 21em;
   left: 0;
   opacity: 40%;
 }
@@ -138,7 +120,7 @@ p{
 .hvorfor {
   margin-top: 4em;
 }
-.hvorforArticle{
+.hvorforContainer{
   margin: 0;
 }
 .circleImage {
@@ -164,44 +146,45 @@ p{
   line-height: 30px;
   margin-bottom: 1em;
 }
-.hvorforArticle p{
-  width: 80%;
+.hvorforContainer p{
+  width: 100%;
+  padding: 1em 2em 0 2em;
 }
 /* Favoritter */
-.favoritterArticle{
+.favoritterContainer{
   margin: 4em 0 0 0;
 }
-.favoritterArticle figure img{
+.favoritterContainer figure img{
   width: 100%;
   padding: 2em;
 }
 .figure-caption {
   font-family: 'Vidaloka', serif;
-  font-size: 1em;
+  font-size: 1.6em;
   color: black;
   text-align: center;
 }
 .greyTextureFavoritter {
   position: absolute;
   width: 100%;
-  height: 1280px;
+  height: 1372px;
   z-index: -10;
-  top: 168em;
+  top: 174em;
   left: 0;
   opacity: 40%;
 }
-.favoritterArticle button{
+.favoritterContainer button{
   margin: 2em 0 0 0;
 }
-/* Vires kunders siger */
+/* Slider Bottom */
 
-.VoresKundersSigerSection {
-  margin: 0;
+.sliderBottom {
   width: 100%;
+  margin-top: 5em;
   }
- .carousel2{
-   margin-top: 17em;
- }
+.sliderBottom-item{
+  margin-top: -2em;
+}
 .quotes, .stars{
   width: 30px;
   margin: auto;
@@ -213,7 +196,7 @@ p{
 .stars{
   width: 120px;
  }
- .VoresKundersCarousel-caption {
+.sliderBottom-caption {
   position: relative;
   bottom: -34px;
   z-index: 100;
@@ -222,18 +205,18 @@ p{
   left: 0;
   padding: 0 2em 3em -1em;
 }
-.VoresKundersCarousel-item .VoresKundersCarousel-caption h5{
+.VoresKundersCarousel-item .sliderBottom-caption h5{
   font-size: 1em;
   font-weight: 400;
   width: 100%;
   padding: 0 2em 0 2em;
   text-align: center;
  }
-.VoresKundersCarousel-item .VoresKundersCarousel-caption h6{
+.sliderBottom-item .sliderBottom-caption h6{
   font-weight: 300;
   text-align: center;
 }
-.VoresKundersCarousel-indicators{
+.sliderBottom-indicators{
   top: 25em;
 }
 
