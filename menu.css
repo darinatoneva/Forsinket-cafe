@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+:root{
+  --black: #000000;
+  --brown: #2A191A;
+  --leightbrown: #AA8773;
+  --red: #98251E;
+  --orange: #E45932;
+  --yellow: #F3A93E;
+  --grey: #F5F5F5;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto 0px;
+    align-items: center;
+    justify-content: center;
+    }
+.row {
+  justify-content: center;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+h1, h2, h3, h4 {
+  font-family: 'Vidaloka', serif;
+  color: var(--brown);
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  color: var(--brown);
+}
+.logo img {
+  width: 8em;
+  padding: 0.5em 0 0 1em;
+}
+/* Navigation */
+.navbar {
+  justify-content: flex-end;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+.bg-dark {
+  background-color: rgba(0,0,0,.075)!important;
+}
+.navImage{
+  position: absolute;
+  z-index: -1;
+  height: 40px;
+  width: 100%;
+}
+/* Horizontal lines */
+.lines {
+  width: 60%;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+.firstLine{
+  height: 1.5px;
+  background-color: var(--brown);  
+}
+.secondLine {
+  height: 3px;
+  background-color: black;
+  margin-top: -0.7em;
+}
+
+
+/*---Firefox Bug Fix --*/
+.sliderTop{
+   top: -5em;
+  z-index: -10;
+}
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+.sliderTopInner img{
+  width: 100%;
+  height: auto;
+  z-index: -10;
+}
+
+/* Grey shapes */
+/* .test {
+  background-image: url(./images/grey-vertical.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 111%;
+  height: 498px;
+  position: top left;
+  left: 0;
+  top: 0;
+  z-index: -10;
+} */
+
+/* Footer */
+.footer{
+  margin: 0;
+}
+.footerTexture{
+  width: 100%;
+  height: 26em;
+  z-index: -10;
+  position: absolute;
+  top: 4em;
+  left: 0;
+  }
+.footerLogo {
+  width: 130px;
+  }
+.footer p {
+  width: 100%;
+  margin-top: -6em;
+  color: white;
+  font-family: 'Raleway';
+  text-align: center;
+  }
+.footer button{
+  margin: 2em 0 0 0;
+}
+.takeawayButton{
+  background-color: var(--red)!important;
+  border: none;
+  color: white!important;
+  font-weight: 400!important;
+  margin: 2em 1em 0 0!important;
+}
+.takeawayButton:hover{
+  background-color: var(--orange)!important;
+  color: white!important;
+  border: none;
+}
+.bookButton{
+  background-color: var(--red)!important;
+  border: none;
+  color: white!important;
+  font-weight: 400!important;
+  margin: 2em 1em 0 0!important;
+}
+.bookButton:hover{
+  background-color: var(--orange)!important;
+  color: white!important;
+  border: none;
+}
+.covidButton{
+  background-color: var(--red)!important;
+  border: none;
+  font-weight: 400!important;
+  margin: 2em 1em 0 0!important;
+  }
+  .covidButton:hover{
+    background-color: var(--orange)!important;
+    border: none;
+  }
+
+/* Menu page */
+.menuImages img{
+  width: 100%;
+}
+.takeaway{
+  margin: 2em 0 0 0;
+}
+.linesPages{
+  width: 40%;
+  margin: 2em 0 0 0;
+  padding: 0;
+  color: var(--brown);
+}
+.voresMenu{
+  padding: 0 0 0 1.3em;
+}
+
+/*---Media Queries --*/
+@media (max-width: 576px) {
+  .footer {
+    margin: 3em 0 0 0;
+  }
+    .footerLogo {
+      margin: 6em 0 9em 0;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .lines {
+    width: 40%;
+    margin: 3em 0 0 3em;
+     }
+  
+     .footer {
+      margin: 3em 0 0 0;
+    }
+  .footerLogo {
+    margin: 6em 0 9em 0;
+  }
+  }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .lines {
+    margin: 3em 0 0 2em;
+  }
+  .footer {
+    margin: 5em 0 0 0;
+  }
+  .footerTexture {
+      height: 30em;
+    }
+    .footerLogo {
+      margin: 6em 0 9em 0;
+  }
+  
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+  .lines {
+    margin: 3em 0 0 2em;
+  }
+  .footer {
+    margin: 5em 0 0 0;
+  }
+  .footerTexture {
+      height: 30em;
+    }
+    .footerLogo {
+      margin: 6em 0 9em 0;
+  }
+  .titleSection {
+    margin: 6em 0 -4em 0;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .footerTexture {
+    height: 30em;
+  }
+  .footer {
+    margin: 5em 0 0 0;
+  }
+  .footerLogo {
+    margin: 6em 0 9em 0;
+  }
+}
+
