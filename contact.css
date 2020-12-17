@@ -41,6 +41,8 @@ p{
 .logo img {
   width: 8em;
   padding: 0.5em 0 0 1em;
+  position: absolute;
+  z-index: 100;
 }
 /* Navigation */
 .navbar {
@@ -50,12 +52,32 @@ p{
   right: 0;
 }
 .bg-dark {
-  background-color: rgba(0,0,0,.075)!important;
+  background-color: rgba(42,25,26,1)!important;
+  padding-left: 1em;
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+}
+.nav-link:hover{
+  color: var(--orange)!important;
+}
+.takeawayMenuButton{
+  background-color: var(--orange)!important;
+  color: white!important;
+  border: none;
+  font-weight: 500!important;
+}
+.takeawayMenuButton:hover{
+  background-color: var(--red)!important;
+  border: none;
+  color: white!important;
+}
+
 .navImage{
   position: absolute;
-  z-index: -1;
-  height: 40px;
+  z-index: 20;
+  height: 46px;
   width: 100%;
 }
 /* Horizontal lines */
@@ -76,9 +98,8 @@ p{
 
 
 /*---Firefox Bug Fix --*/
-.sliderTop{
-   top: -5em;
-  z-index: -10;
+.logo img {
+  width: 10em;
 }
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
@@ -92,7 +113,9 @@ p{
   height: auto;
   z-index: -10;
 }
-
+.carousel-indicators li {
+  background-color: var(--orange);
+}
 /* Grey shapes */
 /* .test {
   background-image: url(./images/grey-vertical.jpg);
@@ -262,7 +285,9 @@ p{
   
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  
+  .rightInputs{
+    margin-left: 5em;
+  }
   .lines {
     margin: 3em 0 0 2em;
   }
@@ -303,10 +328,17 @@ p{
   .footerLogo {
     margin: 6em 0 9em 0;
   }
-  
+  .leftInputs {
+    margin: 0 -368px 0 11em;
+}
+.formParagraph {
+  padding: 3em 13.5em 1em 19.5em;
+}
 }
 @media only screen and (min-width: 1201px) {
-   
+  .logo img {
+    width: 10em;
+}
   .footerTexture {
     height: 30em;
   }
@@ -322,6 +354,8 @@ p{
   .footerLogo {
     margin: 6em 0 9em 0;
 }
-  
+.leftInputs {
+  margin: 0 -368px 0 11em;
+}
 }
 
